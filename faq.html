@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <title>Spino Develops</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+        <div class="navbar">
+                <ul style="background-color: rgb(27, 22, 18);">
+                        <li><a class="x" href="#"><img src="SpinoDevelopsLogo.png" alt="SpinoDevelopsLogo"></a></li>
+                        <li><a class="a" href="home.html">Home</a></li>
+                        <li><a class="a" href="pricing.html">Pricing</a></li>
+                        <li><a class="a" href="faq.html">FAQ</a></li>
+                        <li><a class="a" href="contact.html">Contact Me</a></li>
+                </ul>
+        </div>
+        <div class="h0">Frequently Asked Questions</div>
+        <button class="faq">What Products do you sell?</button>
+        <div class="panel">
+                <p>Currently we only sell Pre Built Websites starting at $79.99, and Custom Websites starting at a
+                        Custom Price, $30 USD per page and minimum 4+ Pages, Other Products are currently in planning
+                        and/or testing
+                </p>
+        </div>
+        <button class="faq">What currency do you charge in?</button>
+        <div class="panel">
+                <p>All Orders are charged in $USD (US Dollars)</p>
+        </div>
+        <button class="faq">For the Pre Built Websites what templates are available?</button>
+        <div class="panel">
+                <p>Currently we have Classic Hosting Site, Discord Bot Page, Flexbox Inc, Gridline Corp, for more
+                        information,
+                        images and previews <a href="#">click here</a> (*we don't provide the hosting functionality for
+                        Classic Hosting)</p>
+        </div>
+        <button class="faq">What is a Normal Website?</button>
+        <div class="panel">
+                <p>A Normal Website is more or less a Custom Website without some options such as keeping the custom
+                        template
+                </p>
+        </div>
+        <button class="faq">What is a Custom Website?</button>
+        <div class="panel">
+                <p>A Custom Website is a fully customizable website which starts at Minimum $30 USD per page. Custom
+                        website features include keeping the template and custom finishes as well</p>
+        </div>
+        <button class="faq">Do you provide hosting?</button>
+        <div class="panel">
+                <p>We do not provide hosting for anything</p>
+        </div>
+        <button class="faq">Are you doing Backend Development?</button>
+        <div class="panel">
+                <p>At the moment no we are not</p>
+        </div>
+        <button class="faq">Do you provide refunds?</button>
+        <div class="panel">
+                <p>At this time we do not provide refunds, however if the client is unsatisfied we can provide changes
+                        to your website
+                        (*terms and conditions apply)</p>
+        </div>
+        <div class="footer">
+                <div class="table">
+                        <div class="tt">Links</div>
+                        <div class="li1"><a class="ec" href="home.html">Home</a></div>
+                        <div class="li1"><a class="ec" href="pricing.html">Pricing</a></div>
+                        <div class="li1"><a class="ec" href="faq.html">FAQ</a></div>
+                        <div class="li1"><a class="ec" href="contact.html">Contact</a></div>
+                </div>
+                <div class="table">
+                        <div class="tt">Social Media</div>
+                        <div class="li1"><a href="https://twitter.com/SpinoDevelops" class="fa fa-twitter"></a></div>
+                        <div class="li1"><a href="https://instagram.com/spinodevelops" class="fa fa-instagram"></a>
+                                <div class="li1"><a href="https://facebook.com/spinodevelops"
+                                                class="fa fa-facebook"></a></div>
+                        </div>
+                        <div class="li"></div>
+                </div>
+                <div class="table">
+                        <div class="tt">Contact Info</div>
+                        <div class="li1"><a class="ec" href="mailto:bilalahmed1905@gmail.com">Email</a></div>
+                        <div class="li1"><a class="ec" href="">Discord (DM Spino#2494)</a></div>
+                        <div class="li1"><a class="ec" href="https://discord.gg/bmsvFDThMQ">Discord Server</a></div>
+                </div>
+
+        </div>
+        <div class="li1">Copyright &copy; 2020-2021 Bilal A and Spino Develops</div>
+        <script>
+                var acc = document.getElementsByClassName("faq");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function () {
+                                this.classList.toggle("active");
+                                var panel = this.nextElementSibling;
+                                if (panel.style.display === "block") {
+                                        panel.style.display = "none";
+                                } else {
+                                        panel.style.display = "block";
+                                }
+                        });
+                }
+        </script>
+</body>

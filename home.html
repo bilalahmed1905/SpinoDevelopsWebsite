@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spino Develops</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="bgrnd">
+        <div class="navbar">
+            <ul>
+                <li><a class="x" href="#"><img src="SpinoDevelopsLogo.png" alt="SpinoDevelopsLogo"></a></li>
+                <li><a class="a" href="home.html">Home</a></li>
+                <li><a class="a" href="pricing.html">Pricing</a></li>
+                <li><a class="a" href="faq.html">FAQ</a></li>
+                <li><a class="a" href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <h1 class="h0"
+            style="text-decoration: underline;color: slategrey;font-family: 'New Tegomin', serif;font-size: 40px;">
+            Spino Develops</h1>
+        <div class="op">
+            <div class="h00" style="text-align: center;"><b>Your</b> place to get Responsive, Elegant and Cheap Websites
+            </div>
+            <div class="h0" id="u" style="font-size: 26px;font-family: 'Baskerville', sans-serif ;color: white;"></div>
+        </div>
+    </div>
+    <div id="whyUs">
+        <div class="h01">Skills</div>
+        <p class="p">HTML</p>
+        <div class="container">
+            <div class="skills html">90%</div>
+        </div>
+
+        <p class="p">CSS</p>
+        <div class=" container">
+            <div class="skills css">80%</div>
+        </div>
+
+        <p class="p">Git</p>
+        <div class="container">
+            <div class="skills git">60%</div>
+        </div>
+        <p class="p">Frontend JS</p>
+        <div class="container">
+            <div class="skills js">49%</div>
+        </div>
+        <div class="h0">Why Me??</div>
+        <div class="reasons">
+            <div class="rl">Over A Year of experience in Web Development</div>
+            <div class="rl">Lots of Templates for Pre Built Websites</div>
+            <div class="rl">Options to use frameworks such as Bulma</div>
+            <div class="rl">Responsively Designed Websites</div>
+            <div class="rl">All Browser Compatibility</div>
+            <div class="rl">Custom Website Options</div>
+            <div class="rl">Express Delivery</div>
+            <div class="rl">Neatly Designed</div>
+            <!-- <div class="li" style="margin: 10px 10px;"><a style="background-color: deepskyblue;" class="button" href="#">Hire Me</a> -->
+        </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="table">
+            <div class="tt">Links</div>
+            <div class="li1"><a class="ec" href="home.html">Home</a></div>
+            <div class="li1"><a class="ec" href="pricing.html">Pricing</a></div>
+            <div class="li1"><a class="ec" href="faq.html">FAQ</a></div>
+            <div class="li1"><a class="ec" href="#">Contact</a></div>
+        </div>
+        <div class="table">
+            <div class="tt">Social Media</div>
+            <div class="li1"><a href="https://twitter.com/SpinoDevelops" class="fa fa-twitter"></a></div>
+            <div class="li1"><a href="https://instagram.com/spinodevelops" class="fa fa-instagram"></a></div>
+            <div class="li1"><a href="https://facebook.com/spinodevelops" class="fa fa-facebook"></a></div>
+        </div>
+        <div class="table">
+            <div class="tt">Contact Info</div>
+            <div class="li1"><a class="ec" href="mailto:bilalahmed1905@gmail.com">Email</a></div>
+            <div class="li1"><a class="ec" href="">Discord (DM Spino#2494)</a></div>
+            <div class="li1"><a class="ec" href="https://discord.gg/bmsvFDThMQ">Discord Server</a></div>
+        </div>
+    </div>
+    <div class="li1">Copyright &copy; 2020-2021 Bilal A and Spino Develops</div>
+    <script>
+        let i = 0;
+        const txt = (`Hello and Welcome to Spino Develops. My name is Bilal and I'm a Web Developer with over a year of experience in HTML, CSS and JS.`);
+        let speed = 65;
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("u").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+
+        }
+
+        typeWriter()
+        // More Code
+
+    </script>
+</body>
+
+</html>
