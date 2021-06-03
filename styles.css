@@ -12,6 +12,10 @@
     position: relative;
     font-size: 20px;
 }
+.navbar-item {
+    margin-right: 8px;
+    margin-left: 8px;
+}
 .bc {
    margin-top: 10px;
    padding: 10px 10px;
@@ -28,31 +32,6 @@
     max-width: 100%;
     display: flex;
 }
-/*.a {
-    color: white;
-    text-decoration: none;
-    font-size: 21px;
-    font-family: 'Inter', sans-serif;
-    transition: color .35s ease-in;
-
-}
-
-.a:hover {
-    color: #38cb38;
-}
-ul {
-    display: flex;
-    max-width: 100%;
-    width: 100%;
-}
-li {
-    list-style: none;
-    margin-left: 12px;
-    margin-right: 12px;
-    margin-top: 9px;
-    padding: 9px 9px;
-
-}*/
 .h0 {
     font-size: 34px;
     font-family: 'Montserrat', sans-serif;

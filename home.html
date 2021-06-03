@@ -10,10 +10,11 @@
 </head>
 
 <body>
+    <script src="script.js"></script>
     <div id="bgrnd">
         <nav class="navbar is-dark " role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
+                <a class="navbar-item" href="home.html">
                     <img src="SpinoDevelopsLogo.png" width="30" height="30">
                 </a>
 
@@ -128,6 +129,8 @@
             }
 
         }
+        typeWriter()
+
         document.addEventListener('DOMContentLoaded', () => {
             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
             if ($navbarBurgers.length > 0) {
@@ -143,7 +146,6 @@
             }
 
         });
-
     </script>
 </body>
 

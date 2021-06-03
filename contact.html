@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+        <script src="script.js"></script>
 </head>
 
 <body>
@@ -52,7 +53,7 @@
         </div>
         <div class="h0">Contact Me</div>
         <div class="form">
-                <form id="contact" action="https://send.pageclip.co/vSebhTg9fA2eepZZyuQgEbT5EqB4uEmk"
+                <form id="contact" action="https://send.pageclip.co/vSebhTg9fA2eepZZyuQgEbT5EqB4uEmk/ContactForm"
                         class="pageclip-form" method="post">
                         <label>Full Name</label><br>
                         <input id="name" name="fullname" type="text" class="c is-normal" placeholder="John Doe"><br>
@@ -69,6 +70,23 @@
                 </form>
         </div>
         <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+        <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+                        if ($navbarBurgers.length > 0) {
+                                $navbarBurgers.forEach(el => {
+                                        el.addEventListener('click', () => {
+                                                const target = el.dataset.target;
+                                                const $target = document.getElementById(target);
+                                                el.classList.toggle('is-active');
+                                                $target.classList.toggle('is-active');
+
+                                        });
+                                });
+                        }
+
+                });
+        </script>
 </body>
 
 

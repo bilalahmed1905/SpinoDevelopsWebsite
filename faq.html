@@ -8,6 +8,7 @@
         <link rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+        <script src="script.js"></script>
 </head>
 
 <body>
@@ -65,9 +66,8 @@
         <div class="panel">
                 <p>Currently we have Classic Hosting Site, Discord Bot Page, Flexbox Inc, Gridline Corp, for more
                         information,
-                        images and previews <a href="templates.html">click here</a> (*we don't provide the hosting
-                        functionality for
-                        Classic Hosting)</p>
+                        images and previews <a href="templates.html">click here</a> (*All Prebuilt Sites are powered by
+                        Bulma)</p>
         </div>
         <button class="faq">What is a Normal Website?</button>
         <div class="panel">
@@ -123,11 +123,25 @@
         </div>
         <div class="li1">Copyright &copy; 2020-2021 Bilal A and Spino Develops</div>
         <script>
-                var acc = document.getElementsByClassName("faq");
-                var i;
+                document.addEventListener('DOMContentLoaded', () => {
+                        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+                        if ($navbarBurgers.length > 0) {
+                                $navbarBurgers.forEach(el => {
+                                        el.addEventListener('click', () => {
+                                                const target = el.dataset.target;
+                                                const $target = document.getElementById(target);
+                                                el.classList.toggle('is-active');
+                                                $target.classList.toggle('is-active');
 
-                for (i = 0; i < acc.length; i++) {
-                        acc[i].addEventListener("click", function () {
+                                        });
+                                });
+                        }
+
+                });
+                var faq = document.getElementsByClassName("faq");
+                var i;
+                for (i = 0; i < faq.length; i++) {
+                        faq[i].addEventListener("click", function () {
                                 this.classList.toggle("active");
                                 var panel = this.nextElementSibling;
                                 if (panel.style.display === "block") {
@@ -137,6 +151,5 @@
                                 }
                         });
                 }
-                let faqButton = document.getElementsByClassName("plus")
         </script>
 </body>
