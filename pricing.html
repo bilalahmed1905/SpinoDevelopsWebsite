@@ -7,17 +7,47 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
 </head>
 
 <body>
-        <div class="navbar">
-                <ul style="background-color: rgb(27, 22, 18);">
-                        <li><a class="x" href="#"><img src="SpinoDevelopsLogo.png" alt="SpinoDevelopsLogo"></a></li>
-                        <li><a class="a" href="home.html">Home</a></li>
-                        <li><a class="a" href="pricing.html">Pricing</a></li>
-                        <li><a class="a" href="faq.html">FAQ</a></li>
-                        <li><a class="a" href="contact.html">Contact Me</a></li>
-                </ul>
+        <div class="bc">
+                <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+                        <div class="navbar-brand">
+                                <a class="navbar-item" href="https://bulma.io">
+                                        <img src="SpinoDevelopsLogo.png" width="30" height="30">
+                                </a>
+
+                                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                                        data-target="SpinoDevelopsNav">
+                                        <span aria-hidden="true"></span>
+                                        <span aria-hidden="true"></span>
+                                        <span aria-hidden="true"></span>
+                                </a>
+                        </div>
+
+                        <div id="SpinoDevelopsNav" class="navbar-menu">
+                                <div class="navbar-start">
+                                        <a class="navbar-item" href="home.html">Home</a>
+                                        <a class="navbar-item" href="pricing.html">Pricing</a>
+                                        <a class="navbar-item" href="faq.html">FAQ</a>
+                                        <a class="navbar-item" href="contact.html">Contact Me</a>
+                                </div>
+
+                                <div class="navbar-end">
+                                        <div class="navbar-item">
+                                                <div class="buttons">
+                                                        <a class="button is-primary">
+                                                                <strong>Help</strong>
+                                                        </a>
+                                                        <a class="button is-info">
+                                                                Checkout
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </nav>
         </div>
         <div class="h0" style="margin-bottom: 50px;text-decoration: underline;">
                 Website Pricing</div>
@@ -25,11 +55,11 @@
                 <div class="card">
                         <div class="header">Starter Website</div>
                         <div class="price">$79.99 USD</div>
-                        <div class="li">Pre Built Website <a href="templates.html">templates</a></div>
+                        <div class="li">Pre Built Website</div>
                         <div class="li">4 Web Pages</div>
                         <div class="li">5 Revisions</div>
                         <div class="li">1-2 Week Delivery</div>
-                        <div class="li"><a href="#" class="button">Order Now</a></div>
+                        <div class="li"><a href="#" class="button is-success">Order Now</a></div>
                 </div>
                 <div class="card">
                         <div class="header" style="background-color: dodgerblue;">Pro Website</div>
@@ -38,7 +68,7 @@
                         <div class="li">8 Web Pages</div>
                         <div class="li">8 Revisions</div>
                         <div class="li">2-4 Week Delivery</div>
-                        <div class="li"><a href="#" class="button">Order Now</a></div>
+                        <div class="li"><a href="#" class="button is-success">Order Now</a></div>
                 </div>
                 <div class="card">
                         <div class="header" style="background-color: gold;">Custom Website</div>
@@ -47,7 +77,7 @@
                         <div class="li">$30 USD per page</div>
                         <div class="li">3 Revisions Included, $10 per extra</div>
                         <div class="li">Delivery Time Depends on Project</div>
-                        <div class="li"><a href="#" class="button">Order Now</a></div>
+                        <div class="li"><a href="#" class="button is-success">Order Now</a></div>
                 </div>
         </div>
         <div class="footer">

@@ -7,17 +7,47 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
 </head>
 
 <body>
-        <div class="navbar">
-                <ul style="background-color: rgb(27, 22, 18);">
-                        <li><a class="x" href="#"><img src="SpinoDevelopsLogo.png" alt="SpinoDevelopsLogo"></a></li>
-                        <li><a class="a" href="home.html">Home</a></li>
-                        <li><a class="a" href="pricing.html">Pricing</a></li>
-                        <li><a class="a" href="faq.html">FAQ</a></li>
-                        <li><a class="a" href="contact.html">Contact Me</a></li>
-                </ul>
+        <div class="bc">
+                <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+                        <div class="navbar-brand">
+                                <a class="navbar-item" href="https://bulma.io">
+                                        <img src="SpinoDevelopsLogo.png" width="30" height="30">
+                                </a>
+
+                                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                                        data-target="SpinoDevelopsNav">
+                                        <span aria-hidden="true"></span>
+                                        <span aria-hidden="true"></span>
+                                        <span aria-hidden="true"></span>
+                                </a>
+                        </div>
+
+                        <div id="SpinoDevelopsNav" class="navbar-menu">
+                                <div class="navbar-start">
+                                        <a class="navbar-item" href="home.html">Home</a>
+                                        <a class="navbar-item" href="pricing.html">Pricing</a>
+                                        <a class="navbar-item" href="faq.html">FAQ</a>
+                                        <a class="navbar-item" href="contact.html">Contact Me</a>
+                                </div>
+
+                                <div class="navbar-end">
+                                        <div class="navbar-item">
+                                                <div class="buttons">
+                                                        <a class="button is-primary">
+                                                                <strong>Help</strong>
+                                                        </a>
+                                                        <a class="button is-info">
+                                                                Checkout
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </nav>
         </div>
         <div class="h0">Frequently Asked Questions</div>
         <button class="faq">What Products do you sell?</button>
