@@ -5,19 +5,22 @@
     max-width: 100%;
     position: relative;
     background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
-    min-height: 675px;
+    min-height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    font-size: 20px;
 }
 .bc {
    margin-top: 10px;
    padding: 10px 10px;
+   font-size: 20px;
 }
 .op {
     display: block;
-    background-color: rgb(165, 165, 165);
+    background: transparent;
+    opacity: 2;
     z-index: 0;
 }
 .navbar {
