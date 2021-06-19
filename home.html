@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
-    <script src="script.js"></script>
     <div id="bgrnd">
         <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="home.html">
-                    <img src="SpinoDevelopsLogo.png" width="30" height="30">
+                    <img src="images/SpinoDevelopsLogo.png" width="30" height="30" alt="Spino Develops Logo">
                 </a>
 
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
@@ -36,7 +36,6 @@
                     <a class="navbar-item" href="faq.html">FAQ</a>
                     <a class="navbar-item" href="contact.html">Contact Me</a>
                 </div>
-
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
@@ -51,16 +50,17 @@
             style="text-decoration: underline;color: slategrey;font-family: 'New Tegomin', serif;font-size: 40px;">
             Spino Develops</h1>
         <div class="op">
-            <div class="h00" style="text-align: center;"><b>Your</b> place to get Responsive, Elegant and Cheap Websites
+            <div class="h00" style="text-align: center;" role="title"><b>Your</b> place to get Responsive, Elegant and
+                Cheap Websites
             </div>
-            <div class="h0" id="xxy" style="font-size: 26px;font-family: 'Baskerville', sans-serif ;color: white;">
-            </div>
+            <h2 class="h0" id="xxy" style="font-size: 26px;font-family: 'Baskerville', sans-serif ;color: white;">
+            </h2>
         </div>
     </div>
     <div id="whyUs">
         <div class="h01" style="color: black;">Skills</div>
         <p class="p">HTML</p>
-        <div class="container">
+        <div class="container" role="skills">
             <div class="skills html">90%</div>
         </div>
 
@@ -78,7 +78,7 @@
             <div class="skills js">49%</div>
         </div>
         <div class="h0">Why Me??</div>
-        <div class="reasons">
+        <div class="reasons" role="list">
             <div class="rl">Over A Year of experience in Web Development</div>
             <div class="rl">Options to use frameworks such as Bulma or Bootstrap</div>
             <div class="rl">Templates for Pre Built Websites</div>
@@ -87,35 +87,34 @@
             <div class="rl">Custom Website Options</div>
             <div class="rl">Express Delivery</div>
             <div class="rl">Neatly Designed</div>
-            <!-- <div class="li" style="margin: 10px 10px;"><a style="background-color: deepskyblue;" class="button" href="#">Hire Me</a> -->
         </div>
     </div>
+
+    <h2 class="w3-center" style="text-decoration: underline;">Projects</h2>
+
+    <div class="w3-content w3-display-container" role="presentation">
+        <img class="mySlides" src="images/typespeedtester.png" style="width:100%">
+        <img class="mySlides" src="images/htmlclock.png" style="width:100%">
+        <img class="mySlides" src="images/x.png" style="width:100%">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
-    <!-- Footer -->
-    <div class="footer">
-        <div class="table">
-            <div class="tt">Links</div>
-            <div class="li1"><a class="ec" href="home.html">Home</a></div>
-            <div class="li1"><a class="ec" href="pricing.html">Pricing</a></div>
-            <div class="li1"><a class="ec" href="templates.html">Website Templates</a></div>
-            <div class="li1"><a class="ec" href="contact.html">Contact</a></div>
+    <footer class="footer" role="footer" style="margin-top:10px;">
+        <div class="content has-text-centered">
+            <div class="is-size-5-desktop is-size-4-tablet is-size-3-mobile ">Social Media</div>
+            <div class="is-flex is-flex-direction-column" style="width: 100%">
+                <div class="li1"><a href="https://twitter.com/SpinoDevelops" class="fa fa-twitter"></a></div>
+                <div class="li1"><a href="https://instagram.com/spinodevelops" class="fa fa-instagram"></a></div>
+                <div class="li1"><a href="https://facebook.com/spinodevelops" class="fa fa-facebook"></a></div>
+                <div class="li1"><a href="https://github.com/bilalahmed1905" class="fa fa-github"></a></div>
+            </div>
+            <p style="margin-top: 10px;">
+                Copyright &copy; 2020-2021 Bilal A and <strong>Spino Develops</strong>
+            </p>
         </div>
-        <div class="table">
-            <div class="tt">Social Media</div>
-            <div class="li1"><a href="https://twitter.com/SpinoDevelops" class="fa fa-twitter"></a></div>
-            <div class="li1"><a href="https://instagram.com/spinodevelops" class="fa fa-instagram"></a></div>
-            <div class="li1"><a href="https://facebook.com/spinodevelops" class="fa fa-facebook"></a></div>
-            <div class="li1"><a href="https://github.com/bilalahmed1905" class="fa fa-github"></a></div>
         </div>
-        <div class="table">
-            <div class="tt">Contact Info</div>
-            <div class="li1"><a class="ec" href="mailto:bilalahmed1905@gmail.com">Email</a></div>
-            <div class="li1"><a class="ec" href="">Discord (DM Spino#2494)</a></div>
-            <div class="li1"><a class="ec" href="https://discord.gg/bmsvFDThMQ">Discord Server</a></div>
-            <div class="li1"><a class="ec" href="#">Testing</a></div>
-        </div>
-    </div>
-    <div class="li1">Copyright &copy; 2020-2021 Bilal A and Spino Develops</div>
+    </footer>
     <script>
         let i = 0;
         const txt = (`Hello and Welcome to Spino Develops. My name is Bilal and, I'm a Web Developer with over a year of experience in HTML, CSS and JS.`);
@@ -145,6 +144,23 @@
             }
 
         });
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
     </script>
 </body>
 

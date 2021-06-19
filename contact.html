@@ -9,14 +9,16 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
         <div class="bc">
                 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
                         <div class="navbar-brand">
-                                <a class="navbar-item" href="https://bulma.io">
-                                        <img src="SpinoDevelopsLogo.png" width="30" height="30">
+                                <a class="navbar-item" href="#">
+                                        <img src="images/SpinoDevelopsLogo.png" width="30" height="30"
+                                                alt="Spino Develops Logo">
                                 </a>
 
                                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
@@ -35,13 +37,13 @@
                                         <a class="navbar-item" href="contact.html">Contact Me</a>
                                 </div>
                                 <div class="navbar-end">
-                                        <div class="navbar-item">
+                                        <!-- <div class="navbar-item">
                                                 <div class="buttons">
                                                         <a class="button is-primary">
                                                                 <strong>Help</strong></a>
                                                         <a class="button is-info" href="">Checkout</a>
                                                 </div>
-                                        </div>
+                                        </div> -->
                                 </div>
                 </nav>
         </div>
@@ -50,19 +52,27 @@
                 <form id="contact" action="https://send.pageclip.co/WPv75nlyHqcpJq4ESmy7HRVG113qBsDW/Contact_Form"
                         class="pageclip-form" method="post">
                         <label>Full Name</label><br>
-                        <input id="name" name="fullname" type="text" class="c is-normal" placeholder="John Doe"><br>
+                        <input id="fullname" class="input is-success is-rounded" name="fullname" type="text"
+                                placeholder="John Doe"><br>
                         <label>Email Address</label><br>
-                        <input id="email" name="email" type="email" class="c is-normal"
-                                placeholder="johndoe@gmail.com"><br>
+                        <input id="fullname" class="input is-success is-rounded" name="email" type="text"
+                                placeholder="Johndoe7263@gmail.com"><br>
                         <label>Discord Username (if applicable)</label><br>
-                        <input id="dUser" name="discordUsername" type="text" class="c is-normal"
+                        <input id="dUser" class="input is-success is-rounded" name="discordUsername" type="text"
                                 placeholder="JohnDough#1672"><br>
                         <label>Question or Comment</label><br>
-                        <input id="qorc" type="text" name="Question_or_Comment" class="c is-normal"
+                        <input id="qorc" class="input is-success is-rounded" type="text" name="Question_or_Comment"
                                 placeholder="What is . . .?"><br>
                         <button type="submit" id="submit" class="pageclip-form__submit"><span>Send</span></button>
                 </form>
         </div>
+        <footer class="footer">
+                <div class="content has-text-centered">
+                        <p>
+                                Copyright &copy; 2020-2021 Bilal A and <strong>Spino Develops</strong>
+                        </p>
+                </div>
+        </footer>
         <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
         <script>
                 document.addEventListener('DOMContentLoaded', () => {
