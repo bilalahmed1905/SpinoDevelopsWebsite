@@ -17,7 +17,7 @@
                 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
                         <div class="navbar-brand">
                                 <a class="navbar-item" href="#">
-                                        <img src="images/SpinoDevelopsLogo.png" width="30" height="30"
+                                        <img src="media/SpinoDevelopsLogo.png" width="30" height="30"
                                                 alt="Spino Develops Logo">
                                 </a>
 
@@ -37,28 +37,37 @@
                                         <a class="navbar-item" href="contact.html">Contact Me</a>
                                 </div>
                                 <div class="navbar-end">
-
+                                        <div class="navbar-item">
+                                                <div class="buttons">
+                                                        <a class="button is-primary">Help</a>
+                                                        <a class="button is-info">Checkout</a>
+                                                </div>
+                                        </div>
                                 </div>
                 </nav>
         </div>
-        <div class="h0">Contact Me</div>
-        <div class="form">
-                <form id="contact" action="https://send.pageclip.co/WPv75nlyHqcpJq4ESmy7HRVG113qBsDW/Contact_Form"
-                        class="pageclip-form" method="post">
-                        <label>Full Name</label><br>
-                        <input id="fullname" class="input is-success is-rounded" name="fullname" type="text"
-                                placeholder="John Doe"><br>
-                        <label>Email Address</label><br>
-                        <input id="fullname" class="input is-success is-rounded" name="email" type="text"
-                                placeholder="Johndoe7263@gmail.com"><br>
-                        <label>Discord Username (if applicable)</label><br>
-                        <input id="dUser" class="input is-success is-rounded" name="discordUsername" type="text"
-                                placeholder="JohnDough#1672"><br>
-                        <label>Question or Comment</label><br>
-                        <input id="qorc" class="input is-success is-rounded" type="text" name="Question_or_Comment"
-                                placeholder="What is . . .?"><br>
-                        <button type="submit" id="submit" class="pageclip-form__submit"><span>Send</span></button>
+        <div class="w3-card-4">
+        
+                <div class="w3-container w3-blue" style="padding: 10px 10px;">
+                        <h2>Contact Me</h2>
+                </div>
+        
+                <form id="contact" class="w3-container pageclip-form w3-light-grey" style="margin: 10px 10px;padding: 5px 5px;font-size: 16px;" action="https://send.pageclip.co/WPv75nlyHqcpJq4ESmy7HRVG113qBsDW/Contact_Form" method="post">
+        
+                        <label style="color: black;">Full Name</label><br>
+                        <input class="w3-input w3-border" name="Fullname" type="text"><br>
+        
+                        <label style="color: black;">Email</label><br>
+                        <input class="w3-input w3-border" name="Email" type="email"><br>
+
+                        <label style="color: black;">Discord Username</label><br>
+                        <input class="w3-input w3-border" name="DiscordUsername" type="text"><br>
+
+                        <label style="color: black;">Question or Comment</label><br>
+                      <textarea class="textarea w3-border" name="Question_Or_Comment"></textarea><br>
+                        <button type="submit" id="submit" class="pageclip-form__submit" onsubmit="return submit()"><span>Send</span></button>
                 </form>
+        
         </div>
         <footer class="footer">
                 <div class="content has-text-centered">
@@ -84,6 +93,20 @@
                         }
 
                 });
+                
+        // function submit() {
+        //                 event.preventDefault()
+        //                 let fullname = document.getElementById("fullname")
+        //                 let email = document.getElementById("email")
+        //                 if (fullname.value === "") {
+        //                         alert("Fullname is a required")
+        //                         return false
+        //                 }
+        //                 if (email.value === "") {
+        //                         alert("Email is required")
+        //                         return false
+        //                 }
+        //         }
         </script>
 </body>
 
