@@ -35,6 +35,25 @@
                                         <a class="navbar-item" href="pricing.html">Pricing</a>
                                         <a class="navbar-item" href="faq.html">FAQ</a>
                                         <a class="navbar-item" href="contact.html">Contact Me</a>
+                                        <div class="navbar-item has-dropdown is-hoverable is-left">
+                                                <a class="navbar-link">
+                                                        Social
+                                                </a>
+                                                <div class="navbar-dropdown">
+                                                        <a class="navbar-item" href="https://twitter.com/spinodevelops">
+                                                                Twitter
+                                                        </a>
+                                                        <a class="navbar-item" href="https://discord.gg/bmsvFDThMQ">
+                                                                Discord
+                                                        </a>
+                                                        <a class="navbar-item" href="https://github.com/bilalahmed1905">
+                                                                Github
+                                                        </a>
+                                                        <a class="navbar-item" href="https://instagram.com/spinodevelops">
+                                                                Instagram
+                                                        </a>
+                                                </div>
+                                        </div>
                                 </div>
                                 <div class="navbar-end">
                                         <div class="navbar-item">
@@ -44,6 +63,7 @@
                                                 </div>
                                         </div>
                                 </div>
+                        </div>
                 </nav>
         </div>
         <div class="w3-card-4">
@@ -54,18 +74,18 @@
         
                 <form id="contact" class="w3-container pageclip-form w3-light-grey" style="margin: 10px 10px;padding: 5px 5px;font-size: 16px;" action="https://send.pageclip.co/WPv75nlyHqcpJq4ESmy7HRVG113qBsDW/Contact_Form" method="post">
         
-                        <label style="color: black;">Full Name</label><br>
-                        <input class="w3-input w3-border" name="Fullname" type="text"><br>
+                        <label style="color: black;" for="fullname">Full Name</label><br>
+                        <input id="fullname" class="w3-input w3-border" name="Fullname" type="text"><br>
         
-                        <label style="color: black;">Email</label><br>
-                        <input class="w3-input w3-border" name="Email" type="email"><br>
+                        <label style="color: black;" for="email">Email</label><br>
+                        <input id="email" class="w3-input w3-border" name="Email" type="email"><br>
 
-                        <label style="color: black;">Discord Username</label><br>
-                        <input class="w3-input w3-border" name="DiscordUsername" type="text"><br>
+                        <label style="color: black;" for="discordUsername">Discord Username</label><br>
+                        <input id="discordUsername" class="w3-input w3-border" name="DiscordUsername" type="text"><br>
 
-                        <label style="color: black;">Question or Comment</label><br>
-                      <textarea class="textarea w3-border" name="Question_Or_Comment"></textarea><br>
-                        <button type="submit" id="submit" class="pageclip-form__submit" onsubmit="return submit()"><span>Send</span></button>
+                        <label style="color: black;" for="qorc">Question or Comment</label><br>
+                      <textarea id="qorc" class="textarea w3-border" name="Question_Or_Comment"></textarea><br>
+                        <button type="submit" id="submit" class="pageclip-form__submit"><span>Send</span></button>
                 </form>
         
         </div>

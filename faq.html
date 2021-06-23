@@ -36,6 +36,25 @@
                                         <a class="navbar-item" href="pricing.html">Pricing</a>
                                         <a class="navbar-item" href="faq.html">FAQ</a>
                                         <a class="navbar-item" href="contact.html">Contact Me</a>
+                                        <div class="navbar-item has-dropdown is-hoverable is-left">
+                                                <a class="navbar-link">
+                                                        Social
+                                                </a>
+                                                <div class="navbar-dropdown">
+                                                        <a class="navbar-item" href="https://twitter.com/spinodevelops">
+                                                                Twitter
+                                                        </a>
+                                                        <a class="navbar-item" href="https://discord.gg/bmsvFDThMQ">
+                                                                Discord
+                                                        </a>
+                                                        <a class="navbar-item" href="https://github.com/bilalahmed1905">
+                                                                Github
+                                                        </a>
+                                                        <a class="navbar-item" href="https://instagram.com/spinodevelops">
+                                                                Instagram
+                                                        </a>
+                                                </div>
+                                        </div>
                                 </div>
                                 <div class="navbar-end">
                                         <div class="navbar-item">
@@ -114,12 +133,12 @@
                         }
 
                 });
-                var faq = document.getElementsByClassName("faq");
-                var i;
+                let faq = document.getElementsByClassName("faq");
+                let i;
                 for (i = 0; i < faq.length; i++) {
                         faq[i].addEventListener("click", function () {
                                 this.classList.toggle("active");
-                                var panel = this.nextElementSibling;
+                                let panel = this.nextElementSibling;
                                 if (panel.style.display === "block") {
                                         panel.style.display = "none";
                                 } else {

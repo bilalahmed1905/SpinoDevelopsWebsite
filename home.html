@@ -29,7 +29,7 @@
                 </a>
             </div>
 
-            <div id="SpinoDevelopsNav" class="navbar-menu">
+            <div id="SpinoDevelopsNav" class="navbar-menu" style="width: 100%;">
                 <div class="navbar-start">
                     <a class="navbar-item" href="home.html">Home</a>
                     <a class="navbar-item" href="pricing.html">Pricing</a>
@@ -39,14 +39,14 @@
                         <a class="navbar-link">
                             Social
                         </a>
-                        <div class="navbar-dropdown is-boxed">
+                        <div class="navbar-dropdown">
                             <a class="navbar-item" href="https://twitter.com/spinodevelops">
                                 Twitter
                             </a>
                             <a class="navbar-item" href="https://discord.gg/bmsvFDThMQ">
                                 Discord
                             </a>
-                            <a class="navbar-item" href="https:github.com/bilalahmed1905">
+                            <a class="navbar-item" href="https://github.com/bilalahmed1905">
                                 Github
                             </a>
                             <a class="navbar-item" href="https://instagram.com/spinodevelops">
@@ -57,18 +57,19 @@
                 </div>
                 <div class="navbar-end">
                     <div class="navbar-item">
-                        <div class="buttons">
+                        <div class="buttons" style="margin-right: 50px">
                             <a class="button is-primary">Help</a>
                             <a class="button is-info">Checkout</a>
                         </div>
                     </div>
                 </div>
+            </div>
         </nav>
         <h1 class="h0"
             style="text-decoration: underline;color: slategrey;font-family: 'New Tegomin', serif;font-size: 40px;">
             Spino Develops</h1>
         <div class="op">
-            <div class="h00" style="text-align: center;" role="title"><b>Your</b> place to get Responsive, Elegant and
+            <div class="h00" style="text-align: center;"><b>Your</b> place to get Responsive, Elegant and
                 Cheap Websites
             </div>
             <h2 class="h0" id="xxy" style="font-size: 26px;font-family: 'Baskerville', sans-serif ;color: white;">
@@ -78,7 +79,7 @@
     <div id="whyUs">
         <div class="h01" style="color: black;">Skills</div>
         <p class="p">HTML</p>
-        <div class="container" role="skills">
+        <div class="container" role="row">
             <div class="skills html">90%</div>
         </div>
 
@@ -111,12 +112,12 @@
     <h2 class="title is-3 has-text-centered" style="text-decoration: underline;">Projects</h2>
 
     <div class="w3-content w3-display-container" role="presentation">
-        <a href="typespeedtest.html"><img class="mySlides" src="media/typespeedtester.png" style="width: 100%;"></a>
-        <a href="templates.html"><img class="mySlides" src="media/x.png" style="width:100%"></a>
+        <a href="typespeedtest.html"><img class="mySlides" src="media/typespeedtester.png" style="width: 100%;" alt="Type Speed Tester"></a>
+        <a href="templates.html"><img class="mySlides" src="media/x.png" style="width:100%" alt="Xtremex Hosting Image"></a>
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
-    <footer class="footer" role="footer" style="margin-top:10px;">
+    <footer class="footer" style="margin-top:10px;">
         <div class="content has-text-centered">
             <p style="margin-top: 10px;">
                 Copyright &copy; 2020-2021 Bilal A and <strong>Spino Develops</strong>
@@ -152,7 +153,7 @@
             }
 
         });
-        var slideIndex = 1;
+        let slideIndex = 1;
         showDivs(slideIndex);
 
         function plusDivs(n) {
@@ -160,8 +161,8 @@
         }
 
         function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
+            let i;
+            let x = document.getElementsByClassName("mySlides");
             if (n > x.length) { slideIndex = 1 }
             if (n < 1) { slideIndex = x.length }
             for (i = 0; i < x.length; i++) {
