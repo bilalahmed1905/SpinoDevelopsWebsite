@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login/Register for Spino Develops</title>
+
+  <!-- include the widget -->
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<!--<div class="loginMenu">-->
+<!--<div data-netlify-identity-menu></div>-->
+<!--</div>-->
+
+
+<!--<div data-netlify-identity-button>Login with Netlify Identity</div>-->
+<button class="button is-success">Login</button>
+<button class="button is-warning">Register</button>
+<script>
+  // Open the modal
+  netlifyIdentity.open();
+  // Get the current user:
+  // Available after on('init') is invoked
+  const user = netlifyIdentity.currentUser();
+  console.log(user);
+  // Bind to events
+  netlifyIdentity.on('init', user => console.log('init', user));
+  netlifyIdentity.on('login', user => console.log('login', user));
+  netlifyIdentity.on('logout', () => console.log('Logged out'));
+  netlifyIdentity.on('error', err => console.error('Error', err));
+  netlifyIdentity.on('open', () => console.log('Widget opened'));
+  netlifyIdentity.on('close', () => console.log('Widget closed'));
+
+  // Unbind from events
+  netlifyIdentity.off('login'); // to unbind all registered handlers
+  netlifyIdentity.off('login', 'google'); // to unbind a single handler
+
+  // Close the modal
+  netlifyIdentity.close();
+
+  // Log out the user
+  netlifyIdentity.logout();
+
+  // Refresh the user's JWT
+  // Call in on('login') handler to ensure token refreshed after it expires (1hr)
+  // Note: this method returns a promise.
+  netlifyIdentity.refresh().then((jwt)=>console.log(jwt))
+
+  // Change language
+  netlifyIdentity.setLocale('en');
+
+</script>
+</body>
+</html>

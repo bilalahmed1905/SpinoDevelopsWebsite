@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up for Spino Develops</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+</head>
+<body>
+<section class="hero is-medium is-info">
+  <div class="hero-body">
+    <p class="title" style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: 450">
+      Why Sign Up for Spino Develops?
+    </p><br>
+    <p class="subtitle">
+     - Get exclusive offers and coupons
+    </p><br>
+    <p class="subtitle">
+    - Be the first to know about new services and products
+    </p><br>
+    <p class="subtitle">
+      - Up to date information on the website changes and updates
+    </p><br>
+
+        <a class="button is-success" onclick="document.getElementById('SignUpForm').style.display='block'">Sign Up</a>
+    <a class="button is-warning" href="home.html">Home</a>
+      </div>
+
+</section>
+<div id="SignUpForm" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('SignUpForm').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+      <p class="title" style="font-size: 35px;font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: normal">Sign Up for Spino Develops</p>
+      <form action="https://send.pageclip.co/WPv75nlyHqcpJq4ESmy7HRVG113qBsDW/Sign_Up_Form" class="pageclip-form" method="post">
+        <label style="color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px">Full Name</label><br>
+        <input class="w3-input w3-border" id="SignUpName" type="text" name="name"/><br>
+        <label style="color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px">Email</label><br>
+        <input class="w3-input w3-border" id="SignUpEmail" type="email" name="email"/><br>
+
+        <button type="submit" class="pageclip-form__submit" style="background-color: #17e484;width: 15%;border: #17e484 1px solid
+">
+          <span>Send</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      Copyright &copy; 2020-2021 Bilal A and <strong>Spino Develops</strong>
+    </p>
+  </div>
+</footer>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+</body>
+</html>

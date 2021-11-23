@@ -206,6 +206,15 @@
   }
 }
 
+.center {
+  text-align: center;
+}
+.pageclip-form__submit {
+  margin-bottom: 5px;
+}
+.pageclip-form__submit:hover {
+  opacity: 0.8;
+}
 /* FAQ */
 .faq {
   background-color: #eee;
