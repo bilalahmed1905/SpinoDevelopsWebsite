@@ -61,7 +61,7 @@
                                         <div class="navbar-item">
                                                 <div class="buttons">
                                                         <a class="button is-primary" href="signup.html">Sign Up</a>
-                                                        <a class="button is-info">Checkout</a>
+                                                        <a class="button is-info" onclick="darkmode()">Checkout</a>
                                                 </div>
                                         </div>
                                 </div>
@@ -76,6 +76,9 @@
                         <p class="subtitle">
                                 All templates have TrueResponsive which means it supports all supported browsers and
                                 devices.
+                        </p><br>
+                        <p class="subtitle">
+                                Templates include Discord Bot Page, Xtremex Hosting, Flexbox Inc, Gridline Corp
                         </p>
                 </div>
         </section>
@@ -102,6 +105,11 @@
                         }
 
                 });
+
+                function darkmode() {
+                        let hero = document.getElementsByClassName('hero')
+                        hero.class = "hero is-black has-text-centered"
+                }
         </script>
 </body>
 
