@@ -148,12 +148,13 @@
   padding-bottom: 10px;
   color: white;
   font-family: "Cairo", sans-serif;
-  font-size: 1.125rem;
+  font-size: 50px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .skills:hover {
-  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+
 }
 .html {
   width: 90%;
